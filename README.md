@@ -16,7 +16,7 @@ quit Kazam: Super + Control + q
 Note: "Super" is usually this "Windows logo" key.
 
 
-### Removing evaluation key bash script for Linux:
+## Removing evaluation key bash script for Linux:
 #!/bin/bash
 
 echo "removeing evaluation key"
