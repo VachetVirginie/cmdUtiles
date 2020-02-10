@@ -5,7 +5,7 @@
 
 sudo grep -r '^psk=' /etc/NetworkManager/system-connections/
 
-### Kazam(video recorder)
+#Kazam(video recorder)
 
 start recording: Super + Control + r
 pause recording: Super + Control + p
@@ -16,7 +16,7 @@ quit Kazam: Super + Control + q
 Note: "Super" is usually this "Windows logo" key.
 
 
-## Removing evaluation key bash script for Linux:
+# Removing evaluation key bash script for Linux:
 #!/bin/bash
 
 echo "removeing evaluation key"
@@ -33,3 +33,9 @@ sed -i '/evlsprt/d' ~/.java/.userPrefs/prefs.xml
 echo "change date file"
 find ~/.PhpStorm* -type d -exec touch -t $(date +"%Y%m%d%H%M") {} +;
 find ~/.PhpStorm* -type f -exec touch -t $(date +"%Y%m%d%H%M") {} +;
+
+# Git
+
+## Cette commande supprimera toute les branches qui ont été mergé sur master :
+
+git branch --merged | grep -v "\*" | grep -v master | xargs -n 1 git branch -d
