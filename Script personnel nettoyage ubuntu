@@ -17,6 +17,6 @@ echo "Nettoyage terminé"
 
 chmod +x nettoyage.sh
 
-## Le lance
+## Le lancer
 
 sh nettoyage.sh
